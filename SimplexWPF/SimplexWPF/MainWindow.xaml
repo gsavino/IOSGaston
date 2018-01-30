@@ -1,0 +1,26 @@
+﻿<Window x:Class="SimplexWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplexWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBox x:Name="txt_output" HorizontalAlignment="Left" Height="157" Margin="97,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="402" RenderTransformOrigin="0.5,0.5" TextChanged="txt_output_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.454"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="btn_leerModelo" Content="Read Model" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btn_leerModelo_Click"/>
+        <Button Content="Add Ecuation" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button x:Name="DeleteEcu" Content="Delete" HorizontalAlignment="Left" Margin="10,79,0,0" VerticalAlignment="Top" Width="75" Click="DeleteEcu_Click"/>
+        <Button Content="LeoCSV" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
